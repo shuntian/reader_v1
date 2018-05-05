@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimal-ui">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reader.css">
+</head>
+<body>
+  <div id="root" class="container">
+    <div class="m-artical-action">
+      <div class="artical-action-mid" id="action_mid"></div>
+    </div>
+    <div id="top-nav" class="top-nav" style="display:none">
+      <div class="icon-back"></div>
+      <div class="nav-title">返回书架</div>
+    </div>
+    <div id="fiction_chapter_title"></div>
+    <div id="fiction_container" class="m-read-content"></div>
+    <div class="m-button-bar">
+      <ul class="u-tab">
+        <li id="prev-button">上一章</li>
+        <li id="next-button">下一章</li>
+      </ul>
+    </div>
+
+    <div class="bottom-nav-bg bottom_nav" style="display:none"></div>
+
+    <div class="bottom-nav bottom_nav" style="display:none">
+      <div class="item" id="menu-button">
+        <div class="item-wrap">
+          <div class="buttom-icon icon-menu"></div>
+          <div class="icon-text">目录</div>
+        </div>
+      </div>
+      <div class="item" id="font-button">
+        <div class="item-wrap">
+          <div class="buttom-icon icon-font"></div>
+          <div class="icon-text">字体</div>
+        </div>
+      </div>
+      <div class="item" id="night-button">
+        <div class="item-wrap" style="display:none">
+          <div class="buttom-icon icon-day"></div>
+          <div class="icon-text">白天</div>
+        </div>
+        <div class="item-wrap">
+            <div class="buttom-icon icon-night"></div>
+            <div class="icon-text">晚上</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-panel-bg font_container" style="display:none"></div>
+    <div class="nav-panel font_container" id="font-container" style="display:none">
+      <div class="child-mod">
+        <span>字号</span>
+        <button id="large-font" class="font-size-button">大</button>
+        <button id="small-font" class="font-size-button">小</button>
+      </div>
+      <div class="child-mod">
+        <span>背景</span>
+        <div class="bg-container bg-white" id="bg-white">
+          <div class="bg-container-current"></div>
+        </div>
+        <div class="bg-container bg-red" id="bg-red">
+          <div class="bg-container-current"></div>
+        </div>
+        <div class="bg-container bg-purple" id="bg-purple">
+          <div class="bg-container-current"></div>
+        </div>
+        <div class="bg-container bg-green" id="bg-green">
+          <div class="bg-container-current"></div>
+        </div>
+        <div class="bg-container bg-gray" id="bg-gray">
+          <div class="bg-container-current"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="lib/zepto.js"></script>
+  <script>
+    window.jQuery = $;
+  </script>
+  <script src="js/jquery.base64.js"></script>
+  <script src="js/jquery.jsonp.js"></script>
+  <script src="src/reader_promise.js"></script>
+</body>
+</html>
